@@ -33,4 +33,4 @@ jobs:
     - run: bundle config set deployment 'true'
     - run: bundle install
 
-    - run: bundle exec middleman build
+    - run: ./build-static.sh

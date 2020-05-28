@@ -31,6 +31,10 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        ## Push to gh-pages branch from the 'build' file.
         publish_dir: ./build
         publish_branch: gh-pages
-        
+        ## Let's Andrew Lane handle the DNS stuff for this one.
+        cname: docs-spamblockersbot.lungers.com
+        keep_files: true
+
