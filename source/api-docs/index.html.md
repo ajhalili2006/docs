@@ -1,14 +1,9 @@
 ---
-title: SpamWatch API Reference
+title: SpamBlockers API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - python: Python
   - javascript: NodeJS
-  - crystal: Crystal
-  
-toc_footers:
-  - <a href='https://t.me/SpamWatch'>Join the channel for any news</a>
-  - <a href='https://t.me/SpamWatchSupport'>Get a API key for testing</a>
 
 includes:
   - permissions
@@ -19,19 +14,22 @@ includes:
 search: true
 ---
 
-# Authentication
+# Authenicating to the API endpoint
 
 > To authorize, use this code:
 
 ```python
+
 import spamblockers-api
 
+'''Same as how you authenicate your API keys in SpamWatch API.'''
 client = spamwatch.Client('API_KEY')
 ```
 
 ```javascript
 const SpamBlockers = require('spamblockers-api');
 
+// Same as how you uthenicate your API keys in SpamWatch API.
 const client = new SpamBlockers.Client("API_KEY");
 ```
 
