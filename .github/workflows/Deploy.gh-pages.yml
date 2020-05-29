@@ -1,4 +1,4 @@
-name: Deploy
+name: github pages
 
 on:
   push:
@@ -6,35 +6,47 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    env:
-      ruby-version: 2.5
-
+    runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ env.ruby-version }}
+      - uses: actions/checkout@v2
 
-    - uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: gems-${{ runner.os }}-${{ env.ruby-version }}-${{ hashFiles('**/Gemfile.lock') }}
+      - name: Setup Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
 
-    - run: bundle config set deployment 'true'
-    - run: bundle install
+      - name: Upgrade pip to latest version
+        run: |
+          # install pip=>20.1 to use "pip cache dir"
+          python3 -m pip install --upgrade pip
 
-    - run: bundle exec middleman build --verbose
+      - name: Get the dependency cache directory
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        ## Push to gh-pages branch from the 'build' file.
-        publish_dir: ./build
-        publish_branch: gh-pages
-        ## Let's Andrew Lane handle the DNS stuff for this one.
-        cname: docs-spamblockersbot.lungers.com
-        keep_files: true
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
+      - name: Install dependencies
+        run: python3 -m pip install -r ./requirements.txt
+
+      - name: Run documentation site build
+				run: mkdocs build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+					## Push to 'gh-pages' branch from the 'site' branch
+          publish_dir: ./site
+					# defaults to 'gh-pages' if undefined, but we'll do this to make
+					# sure we're not messing stuff with it.
+					publish_branch: gh-pages
+					## More config
+					allow_empty_commits: false
+					keep_files: true

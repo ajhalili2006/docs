@@ -1,0 +1,3 @@
+# Build files for the docs
+site/*
+public/* # for GitLab Pages KEK

@@ -1,0 +1,10 @@
+## The Basics
+site_name: SpamBlockers Documentation
+site_url: https://andreijiroheugeniohalili24680.github.io/SpamBlockersBot-Docs
+
+## Themeing
+theme:
+  name: material
+
+## Mkdocs Plugins
+plugins:
