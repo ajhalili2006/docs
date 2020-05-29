@@ -1,18 +1,12 @@
 # SpamBlockers Docs
 
+> :information_source: **WORK IN PROGRESS!** We're looking for any contributors available to edit our file.
+
 Documentation for SpamBlockers bot from setting up locally (or in cloud) to accessing the API, bilt
 
 ## Where I can access this
 
 Soon on <https://docs-spamblockersbot.loungers.com>.
-
-## FAQs
-
-### Why dafuq you don't use Slate's template and instead you copied a bunch of SpamWatch API docs source?
-
-> **See also in chat**: <https://t.me/SpamBlockers/12651>
-
-Andrei Jiroh: I created the repo in GitLab, and mirrored the stuff over GitHub.
 
 ## Contribute
 
