@@ -9,7 +9,7 @@ repo_url: https://gitlab.com/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs
 edit_uri: edit/master/src/
 
 ## Navigation
-docs:
+nav:
   - 'Home': index.md
   - 'Telegram Bot':
     - 'Setting up the server': tg/setup.md
