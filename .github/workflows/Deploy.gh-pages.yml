@@ -41,13 +41,13 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-					## Push to 'gh-pages' branch from the 'site' branch
+          ## Push to 'gh-pages' branch from the 'site' branch
           publish_dir: ./site
-					# defaults to 'gh-pages' if undefined, but we'll do this to make
-					# sure we're not messing stuff with it.
-					publish_branch: gh-pages
-					## More config
-					allow_empty_commit: false
+          # defaults to 'gh-pages' if undefined, but we'll do this to make
+          # sure we're not messing stuff with it.
+          publish_branch: gh-pages
+          ## More config
+          allow_empty_commit: false
           keep_files: true
           ## Committer Info & Commit Message
           # I am using Recap Time Bot's GH public data for commits
