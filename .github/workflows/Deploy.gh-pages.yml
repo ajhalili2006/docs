@@ -35,8 +35,7 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
-      - name: Run documentation site build
-				run: mkdocs build
+      - run: mkdocs build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -48,5 +47,10 @@ jobs:
 					# sure we're not messing stuff with it.
 					publish_branch: gh-pages
 					## More config
-					allow_empty_commits: false
-					keep_files: true
+					allow_empty_commit: false
+          keep_files: true
+          ## Committer Info & Commit Message
+          # I am using Recap Time Bot's GH public data for commits
+          user_name: 'Recap Time Bot'
+          user_email: 'recaptime.madebythepins@gmail.com'
+          full_commit_message: 'docs: Build success from commit ${{ github.event.head_commit.message }}'

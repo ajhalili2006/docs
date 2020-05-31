@@ -1,4 +1,5 @@
 [![Run on Repl.it](https://repl.it/badge/github/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs)](https://repl.it/github/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs)
+
 # SpamBlockers Docs
 
 > :information_source: **WORK IN PROGRESS!** We're looking for any contributors available to edit our file.
