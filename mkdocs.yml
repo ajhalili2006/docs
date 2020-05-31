@@ -10,19 +10,19 @@ edit_uri: edit/master/src/
 
 ## Navigation
 docs:
-	- Home: index.md
-	- Telegram Bot:
-		- Setting up the server: tg/setup.md
-		- Commands Reference: tg/commands-reference.md
-	- API Documentation:
-		- API Endpoints: api/available-endpoints.md
-		- API Wrappers Usage: api/wrappers.md
+  - 'Home': index.md
+  - 'Telegram Bot':
+    - 'Setting up the server': tg/setup.md
+    - 'Commands Reference': tg/commands-reference.md
+  - 'API Documentation':
+    - "API Endpoints": api/available-endpoints.md
+    - "API Wrappers Usage": api/wrappers.md
 
 ## Themeing and builds
 docs_dir: src
 theme:
   name: material
-	font:
+  font:
     text: Roboto
     code: Roboto Mono
 
@@ -66,5 +66,5 @@ markdown_extensions:
 
 ## Mkdocs Plugins
 plugins:
-	- search
-	- git-revision-date-localized
+  - search
+  - git-revision-date-localized
