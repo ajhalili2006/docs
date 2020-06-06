@@ -12,8 +12,9 @@ edit_uri: edit/master/src/
 nav:
   - 'Home': index.md
   - 'Telegram Bot':
-    - 'Setting up the server': tg/setup.md
+    - 'Setting up bot': tg/setup.md
     - 'Commands Reference': tg/commands-reference.md
+    - 'Customization': 'tg/customization.md'
   - 'API Documentation':
     - "API Endpoints": 'api-docs/available-endpoints.md'
     - "API Wrappers and CLIs":
