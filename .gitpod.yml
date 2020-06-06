@@ -1,0 +1,10 @@
+tasks:
+  - init: pip install -r ./requirements.txt
+    command: mkdocs server --dev-addr 0.0.0.0:3000 --dirtyreload
+ports:
+  - port: 8080
+    onOpen: notify
+vscode:
+  extensions:
+    - DavidAnson.vscode-markdownlint@0.36.0:kEBpMs9dvG8hdpzKZx0+vg==
+    - idleberg.badges@1.0.11:cIc1yBExRVxwDtCFOfgC9w==
