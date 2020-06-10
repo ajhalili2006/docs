@@ -1,0 +1,7 @@
+{
+    "first-header-h1": false,
+    "url": true,
+    "headers": true,
+    "ol-prefix": false,
+    "line-length": false,
+}
