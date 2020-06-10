@@ -4,4 +4,6 @@
     "headers": true,
     "ol-prefix": false,
     "line-length": false,
+    "no-duplicate-heading": false,
+    "no-duplicate-header": false
 }
