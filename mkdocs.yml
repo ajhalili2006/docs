@@ -3,7 +3,7 @@ site_name: SpamBlockers Documentation
 site_url: https://andreijiroheugeniohalili24680.github.io/SpamBlockersBot-Docs
 
 ## Repo Info and Links
-# Will moved to lungers/SpamBlockersBot-Docs soon
+# Will moved to gitlab:SpamBlockers/docs soon
 repo_name: AndreiJirohHaliliDev2006/SpamBlockersBot-Docs
 repo_url: https://gitlab.com/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs
 edit_uri: edit/master/src/
@@ -15,12 +15,22 @@ nav:
     - 'Setting up the server': tg/setup.md
     - 'Commands Reference': tg/commands-reference.md
   - 'API Documentation':
-    - "API Endpoints": api/available-endpoints.md
-    - "API Wrappers Usage": api/wrappers.md
+    - "API Endpoints": 'api-docs/available-endpoints.md'
+    - "API Wrappers and CLIs":
+      - "Official Wrappers": 'api-docs/packages.md/#official-wrappers'
+      - "Official CLI": 'api-docs/packages.md/#official-cli'
+      - "Node.js Wrapper": 'https://npmjs.com/package/@SpamBlockers/API'
+      - "Node.js CLI": 'https://npmjs.com/package/@SpamBlockers/CLI'
+    - "API Permissions": 'api-docs/permissions.md'
+    - "Querying the Banlist":: 'api-docs/banlist.md'
+    - "FAQs": 'api-docs/faq.md'
+  - "Support Chat": 'https://t.me/SpamBlockers'
+
 
 ## Themeing and builds
 docs_dir: src
 theme:
+  language: en
   name: material
   font:
     text: Roboto
@@ -66,5 +76,20 @@ markdown_extensions:
 
 ## Mkdocs Plugins
 plugins:
-  - search
+  - search:
+      seperator: '[\s\-\.]'
+      lang: [ 'en' ]
+  - minify:
+      minify_html: true
   - git-revision-date-localized
+
+## Extra stuff
+extra:
+  ## Social icons
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/SpamBlockers'
+    - icon: fontawesome/brands/gitlab
+      link: 'https://gitlab.com/SpamBlockers'
+    - icon: fontawesome/brands/telegram
+      link: 'https://telegram.dog/SpamBlockers'
