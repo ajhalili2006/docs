@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "me-dutour-mathieu.vscode-github-actions",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "kisstkondoros.vscode-gutter-preview",
+        "davidanson.vscode-markdownlint",
+        "hancel.markdown-image"
+    ]
+}
