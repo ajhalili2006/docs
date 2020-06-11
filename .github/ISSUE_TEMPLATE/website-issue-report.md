@@ -13,6 +13,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -24,16 +25,14 @@ A clear and concise description of what you expected to happen.
 **Screenshots and DevTools**
 If applicable, add screenshots and console logs from DevTools to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Device and Browser Info (please complete the following information):**
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+ - OS: [include OS version]
+ - Device: [model name]
+ - Browser: [English name of the browser you're using, e.g. Google Chrome]
+ - Version [include version and relese cycle, e.g. 83.0.4103.61 (Official Build) (64-bit) (cohort: Stable)]
 
 **Additional context**
 Add any other context about the problem here.
+
+**CI Build Logs** If the issue was on the CI builds, please grab the link to the logs to the exact lines.
