@@ -17,11 +17,15 @@ Want to catch some issues or just want to develop locally? We got you covered!
 
 ### In Repl.it
 
-The **Run In Repl.it**
+The **Run In Repl.it** is there if you wnt simple documentation wiriting in Repl.it without
+the need of using any VS Code extensions.
+
+## In Gitpod
+
+Soon.
 
 ## Contribute
 
-A GitLab.com account is required to contribute to the documentation, but [there's GitHub mirror available to use] if you
-don't want to switch to GitLab yet.
+A GitLab.com account is required to contribute to the documentation, but [there's GitHub mirror available to use] if you don't want to switch to GitLab yet.
 
 [there's GitHub mirror available to use]: https://github.com/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs
