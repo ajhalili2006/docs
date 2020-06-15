@@ -1,11 +1,11 @@
 ## The Basics
 site_name: SpamBlockers Documentation
-site_url: https://andreijiroheugeniohalili24680.github.io/SpamBlockersBot-Docs
+site_url: https://spamblockers.github.io/Docs
 
 ## Repo Info and Links
 # Will moved to gitlab:SpamBlockers/docs soon
-repo_name: AndreiJirohHaliliDev2006/SpamBlockersBot-Docs
-repo_url: https://gitlab.com/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs
+repo_name: SpamBlockers/Docs
+repo_url: https://gitlab.com/SpamBlockers/Docs
 edit_uri: edit/master/src/
 
 ## Navigation
@@ -23,7 +23,7 @@ nav:
       - "Node.js Wrapper": 'https://npmjs.com/package/@SpamBlockers/API'
       - "Node.js CLI": 'https://npmjs.com/package/@SpamBlockers/CLI'
     - "API Permissions": 'api-docs/permissions.md'
-    - "Querying the Banlist":: 'api-docs/banlist.md'
+    - "Querying the Banlist": 'api-docs/banlist.md'
     - "FAQs": 'api-docs/faq.md'
   - "Support Chat": 'https://t.me/SpamBlockers'
 

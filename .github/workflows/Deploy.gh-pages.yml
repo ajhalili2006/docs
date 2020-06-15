@@ -2,7 +2,8 @@ name: Build the site and deploy to GitHub Pages
 
 on:
   push:
-    branches: [ 'master' ]
+    branches: 
+      - master
 
 jobs:
   deploy:
@@ -35,9 +36,10 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
-      - run: mkdocs build
+      - name: Generate documentation site
+        run: mkdocs build
 
-      - name: Deploy
+      - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -46,7 +48,7 @@ jobs:
           # defaults to 'gh-pages' if undefined, but we'll do this to make
           # sure we're not messing stuff with it.
           publish_branch: gh-pages
-          ## More config
+          ## More config blah blah.
           allow_empty_commit: false
           keep_files: true
           ## Committer Info & Commit Message
