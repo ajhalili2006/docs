@@ -1,7 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://gitlab.com/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs)
 [![Run on Repl.it](https://repl.it/badge/github/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs)](https://repl.it/github/AndreiJirohHaliliDev2006/SpamBlockersBot-Docs)
 
-# SpamBlockers Docs
+# SpamBlockers Docs (Unofficial)
 
 > :information_source: **WORK IN PROGRESS!** We're looking for any contributors available to edit our file.
 
