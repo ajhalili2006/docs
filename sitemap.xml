@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://spamblockers.gitlab.io/docs/</loc>
+     <lastmod>2020-07-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spamblockers.gitlab.io/docs/tg/setup/</loc>
+     <lastmod>2020-07-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spamblockers.gitlab.io/docs/tg/commands-reference/</loc>
+     <lastmod>2020-07-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spamblockers.gitlab.io/docs/api-docs/banlist/</loc>
+     <lastmod>2020-07-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spamblockers.gitlab.io/docs/api-docs/faq/</loc>
+     <lastmod>2020-07-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
