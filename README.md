@@ -5,11 +5,11 @@
 
 > :information_source: **WORK IN PROGRESS!** We're looking for any contributors available to edit our file.
 
-Documentation for SpamBlockers bot from setting up locally (or in cloud) to accessing the API, bilt
+Documentation for SpamBlockers bot from setting up locally (or in cloud) to accessing the API, built with Mkdocs.
 
 ## Where I can access this
 
-Soon on <https://docs-spamblockersbot.loungers.com>.
+<https://spamblockers.gitlab.io/docs>.
 
 ## Development
 

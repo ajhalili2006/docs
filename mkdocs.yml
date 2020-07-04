@@ -1,11 +1,11 @@
 ## The Basics
 site_name: SpamBlockers Documentation
-site_url: https://spamblockers.github.io/Docs
+site_url: https://spamblockers.gitlab.io/docs
 
 ## Repo Info and Links
 # Will moved to gitlab:SpamBlockers/docs soon
-repo_name: SpamBlockers/Docs
-repo_url: https://gitlab.com/SpamBlockers/Docs
+repo_name: SpamBlockers/docs
+repo_url: https://gitlab.com/SpamBlockers/docs
 edit_uri: edit/master/src/
 
 ## Navigation
