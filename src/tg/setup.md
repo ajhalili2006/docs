@@ -1,28 +1,57 @@
 ---
-title: Setting up your instance
-description: Follow the easy instructions
+title: Setting up your bot
 ---
 
-Setting up your instance will usually take in minutes, if you have a handy MongoDB database to use (and its DB login information),
-an Telegram Bot APItoken and (optionally) an log channel.
+## TL;DR
 
-## In VPS/Locally on your machine
+1. Clone the Git repository to your repository.
+2. Edit the `.env.sample` file and save it as `.env`.
+3. Create an `admins.json` file containning an array of user IDs of your trusted admins.
+4. Install dependencies with `npm i`.
+5. Start the bot with `npm start`.
+6. Optionally [set up your API server](../api-docs/setup.md) also.
 
-1. Make sure you have at least Node.js 10.x or later on your machine.
-2. Clone the whole code with `git clone https://github.com/AndrewLaneX/SpamBlockersBot`.
-3. Navigate to the local Git repository directory, edit the `.env.sample` file and save as `.env`.
-4. 
+## The Long text
 
-## In Heroku
-Soon, we'll add instructions on how to deploy your instance to Heroku soon.
+### Check your version and clone the whole project
 
-## In Glitch
-### For free users
+```sh
+## Check version and update when needed.
+node -v # v12.14.1
+npm -v #v6.14.2
+git --version # git version 2.27.0.windows.1
 
-> The Glitch project linked below is not yet available yet. Come back once everything is ready.
+## Clone the project
+git clone https://github.com/AndrewLaneX/SpamBlockersBot.git SpamBlockersBot-core
 
-1. [Remix the project](https://glitch.com/edit/#!/remix/communitynetworkhub-fedban-tgbot).
-2. Edit the `.env` file with your
+## Open your directory
+cd SpamBlockersBot-core
+```
 
-### Had upgraded your account to the paid plan?
-We'll add the instructions soon. Hang tight!
+### Copying sample file, edit and save to `.env`
+
+```sh
+## Copy the file.
+cp .env.sample .env
+
+## Edit the file
+nano .env
+```
+
+This what looks like after you do some editing on your `.env` file.
+
+![](../images/tutorials/editing-dotenv-file.png)
+
+Make sure you saved your work before exiting. To save in `nano`, press <button>Ctrl</button>+<button>O</button> and hit <button>Enter</button>. You'll greeted by the `[ Wrote X lines ]` after pressing Enter. Press Ctrl+X to exit.
+
+![](../images/tutorials/saving-dotenv-file-in-nano.png)
+
+![](../images/tutorials/postsave-dotenv-in-nano.png)
+
+## Install dependencies
+
+```sh
+npm i # alias of 'npm install'
+## [...]
+## audited X packages in X s 
+```

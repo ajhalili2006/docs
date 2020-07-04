@@ -1,0 +1,15 @@
+{
+    "[git-commit]": {
+        "editor.rulers": [
+            72
+        ],
+        
+    },
+    "editor.dragAndDrop": true,
+    "git.autofetch": true,
+    "git.alwaysSignOff": true,
+    "git.promptToSaveFilesBeforeCommit": "always",
+    "git.enableStatusBarSync": true,
+    "git.terminalAuthentication": true,
+    "git.confirmEmptyCommits": true
+}
